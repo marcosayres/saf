@@ -4,7 +4,7 @@
     <Menu @open-janela="handleOpenJanela" />
   </div>
   <div v-if="showJanelaAgricultores">
-    <Janela
+    <Agricultores
       :isVisible="showJanelaAgricultores"
       @close="handleCloseJanelaAgricultores"
     />
@@ -62,7 +62,7 @@
 import Header from "./components/Header.vue";
 import System from "./components/System.vue";
 import Menu from "./components/Menu.vue";
-import Janela from "./components/Janela.vue";
+import Agricultores from "./components/Agricultores.vue";
 import InstituicoesRecebedoras from "./components/InstituicoesRecebedoras.vue";
 import Propostas from "./components/Propostas.vue";
 import Produtos from "./components/Produtos.vue";
@@ -72,7 +72,7 @@ export default {
     Header,
     System,
     Menu,
-    Janela,
+    Agricultores,
     InstituicoesRecebedoras,
     Propostas,
     Produtos,
@@ -130,3 +130,7 @@ export default {
   },
 };
 </script>
+
+<style>
+/* Estilos globais da aplicação */
+</style>
